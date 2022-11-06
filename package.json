@@ -1,0 +1,16 @@
+{
+  "name": "22-bot-telegram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.29.4",
+    "telegraf": "^3.38.0"
+  }
+}
