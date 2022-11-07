@@ -18,7 +18,6 @@ function senin() {
   if (jamNow > Number("10.00") && jamNow <= Number("12.00")) {
     return "Pendidikan Agama";
   }
-  return "Turu";
 }
 
 function jadwalSekarang() {
