@@ -38,7 +38,7 @@ bot.command("start", (ctx) => {
 
   bot.action("Jadwal All", (ctx) => {
     bot.telegram.sendPhoto(ctx.chat.id, {
-      source: "res/jadwal.jpg",
+      source: "./jadwal.jpg",
     });
   });
 
