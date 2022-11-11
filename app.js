@@ -1,6 +1,9 @@
 const { Telegraf } = require("telegraf");
 const jadwalSekarang = require("./jadwal");
 const moment = require("moment");
+const express = require('express')
+const app = express()
+const port = process.env.PORT || 5000
 
 const jamLocal = moment()
 jamLocal.locale('id')
@@ -49,6 +52,13 @@ bot.hears("Jam", ctx => {
   });
 });
 
- console.log("Bot Run");
- bot.launch();
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+  console.log("Bot Run");
+  bot.launch();
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
 
