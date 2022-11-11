@@ -1,5 +1,8 @@
 const { Telegraf } = require("telegraf");
 const jadwalSekarang = require("./jadwal");
+const moment = require("moment");
+
+moment.locale("id");
 
 const bot = new Telegraf("5671377356:AAElahGDDjKJKswN_EEmxThMWL5tHtx3KOY");
 
@@ -12,7 +15,7 @@ bot.command("start", (ctx) => {
   );
 
 bot.hears("Jam", ctx => {
- bot.telegram.sendMessage(ctx.chat.id, "Coba");
+ bot.telegram.sendMessage(ctx.chat.id, moment().format("LT"));
 })
 
   bot.hears("Jadwal", (ctx) => {
