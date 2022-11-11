@@ -1,6 +1,5 @@
 const { Telegraf } = require("telegraf");
 const jadwalSekarang = require("./jadwal");
-const http = require("http")
 
 const bot = new Telegraf("5671377356:AAElahGDDjKJKswN_EEmxThMWL5tHtx3KOY");
 
@@ -48,8 +47,6 @@ bot.command("start", (ctx) => {
   });
 });
 
-http.createServer(function (request, response) {
  console.log("Bot Run");
  bot.launch();
-}).listen(process.env.PORT || 5000)
 
