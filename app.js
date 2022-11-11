@@ -13,7 +13,7 @@ bot.command("start", (ctx) => {
 
 bot.hears("Jam", ctx => {
  bot.telegram.sendMessage(ctx.chat.id, "Coba");
-}
+})
 
   bot.hears("Jadwal", (ctx) => {
     bot.telegram.sendMessage(ctx.chat.id, "Jadwal", {
