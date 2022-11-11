@@ -18,12 +18,11 @@ function senin() {
   if (jamNow > Number("10.00") && jamNow <= Number("12.00")) {
     return "Pendidikan Agama";
   }
+  return "turu"
 }
 
 function jadwalSekarang() {
-  if (hariNow == "Senin") {
-    return senin();
-  }
+  return senin()
 }
 
 module.exports = jadwalSekarang;
