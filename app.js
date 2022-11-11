@@ -54,9 +54,10 @@ bot.hears("Jam", ctx => {
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
-  console.log("Bot Run");
-  bot.launch();
 })
+
+console.log("Bot Run");
+bot.launch();
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
