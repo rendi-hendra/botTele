@@ -51,5 +51,5 @@ bot.command("start", (ctx) => {
 http.createServer(function (request, response) {
  console.log("Bot Run");
  bot.launch();
-}.listen(process.env.PORT || 5000)
+}).listen(process.env.PORT || 5000)
 
