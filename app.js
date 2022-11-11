@@ -7,15 +7,13 @@ bot.command("start", (ctx) => {
   console.log(ctx.from);
   bot.telegram.sendMessage(
     ctx.chat.id,
-    "hello there! Welcome to my new telegram bot.",
+    "Welcome",
     {}
   );
 
-  //   bot.hears("Jadwal All", (ctx) => {
-  //     bot.telegram.sendPhoto(ctx.chat.id, {
-  //       source: "res/jadwal.jpg",
-  //     });
-  //   });
+bot.hears("Jam", ctx => {
+ bot.telegram.sendMessage(ctx.chat.id, "Coba");
+}
 
   bot.hears("Jadwal", (ctx) => {
     bot.telegram.sendMessage(ctx.chat.id, "Jadwal", {
